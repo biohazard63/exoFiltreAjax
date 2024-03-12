@@ -10,8 +10,11 @@
     <h1>Personnages de Harry Potter</h1>
 </header>
 <main>
+    <div id="loader">
+
     <p>Cette page affiche des informations sur les personnages de l'univers Harry Potter.</p>
     <button id="showCards">Afficher les cartes</button>
+    </div>
     <form id="filterForm">
         <label for="house">Filtrer par maison :</label>
         <select name="house" id="house">
@@ -23,6 +26,7 @@
         </select>
         <input type="submit" value="Filtrer">
     </form>
+
     <div id="character-cards">
     </div>
 </main>

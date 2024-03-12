@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap');
+
 body {
     background-color: #1a1a1a;
     color: #d3d3d3;
-    font-family: 'Cinzel', serif;
+    font-family: 'IM Fell DW Pica', serif;
 }
 
 header {
@@ -21,6 +23,68 @@ p {
 main {
     margin: 0 auto;
     width: 80%;
+}
+
+button {
+    background-color: #3c3c3c;
+    color: #d3d3d3;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'IM Fell DW Pica', serif;
+}
+
+button:hover {
+    background-color: #d3d3d3;
+    color: #1a1a1a;
+}
+
+#filterForm {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#filterForm label {
+    margin-right: 10px;
+    align-self: center;
+}
+
+#filterForm select, #filterForm input[type="submit"] {
+    background-color: #3c3c3c;
+    color: #d3d3d3;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'IM Fell DW Pica', serif;
+}
+
+#filterForm select:hover, #filterForm input[type="submit"]:hover {
+    background-color: #d3d3d3;
+    color: #1a1a1a;
+}
+
+#loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:1rem;
+
 }
 
 #character-cards {
@@ -52,18 +116,15 @@ footer {
     padding: 20px;
 }
 
-
-
-
 /*****************media query***************/
 @media (max-width: 768px) {
     main {
         width: 100%;
     }
     #character-cards {
-        flew-wrap: nowrap;
+        flex-wrap: nowrap;
         flex-direction: column;
-        align-content: center
+        align-content: center;
     }
     .card {
         margin: 20px 0;
