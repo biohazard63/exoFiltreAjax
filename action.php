@@ -40,6 +40,8 @@ foreach ($data as $character) {
          strpos(strtolower($character['name']), strtolower($search)) !== false ||
          strpos(strtolower($character['house']), strtolower($search)) !== false ||
          strpos(strtolower($character['actor']), strtolower($search)) !== false ||
+         strpos(strtolower($character['dateOfBirth']), strtolower($search)) !== false ||
+        strpos(strtolower($character['yearOfBirth']), strtolower($search)) !== false ||
          strpos(strtolower($character['gender']), strtolower($search)) !== false)) {
         echo createCharacterCard($character['image'], $character['name'], $character['house'], $character['actor'], $character['gender'], $character['dateOfBirth']);
     }
