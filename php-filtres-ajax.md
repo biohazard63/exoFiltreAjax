@@ -44,3 +44,15 @@ Vous rajouterez un élément HTML `button` ayant pour ID `showCards` et, grâce 
 
 ## Partie 6 (bonus)
 Vous ferez en sorte que l'Utilisateur ait la possibilité de filtrer les cartes affichées, toujours *via* des appels AJAX à votre fichier `action.php`, par appartenance de Maison.
+
+## Partie 7 (bonus)
+Vous rajouterez la possibilité pour l'Utilisateur de filter les cartes par Maison et par Genre de manière simultanée.
+
+## Partie 8 (bonus)
+Vous rajouterez la possibilité pour l'Utilisateur de trier les cartes par leur nom selon un ordre alphabétique ou anti-alphabétique.
+
+## Partie 9 (bonus)
+Vous rajouterez la possibilité de filtrer les cartes par année de naissance grâce à une plage de deux dates ainsi qu'un champ de recherche textuelle permettant de filtrer les résultats actuellement affichés sur la page.
+
+> Conseil : le filtrage par recherche textuelle est sûrement à dissocié des filtres effectués via AJAX.
+

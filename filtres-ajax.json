@@ -415,7 +415,7 @@
     "species": "human",
     "gender": "female",
     "house": "Slytherin",
-    "dateOfBirth": null,
+    "dateOfBirth": "26-05-1966" ,
     "yearOfBirth": 1951,
     "wizard": true,
     "ancestry": "pure-blood",

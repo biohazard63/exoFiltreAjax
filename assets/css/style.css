@@ -15,76 +15,69 @@ h1 {
     color: #d3d3d3;
     font-size: 2.5em;
 }
+
 p {
     font-size: 1.5em;
     text-align: center;
 }
 
-main {
-    margin: 0 auto;
-    width: 80%;
-}
-
-button {
-    background-color: #3c3c3c;
-    color: #d3d3d3;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 10px;
-    font-family: 'IM Fell DW Pica', serif;
-}
-
-button:hover {
-    background-color: #d3d3d3;
-    color: #1a1a1a;
+#loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
 }
 
 #filterForm {
     display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 25%;
 }
 
 #filterForm label {
-    margin-right: 10px;
-    align-self: center;
+    flex-basis: 100%;
+    margin-top: 10px;
+    color: #d3d3d3;
 }
 
-#filterForm select, #filterForm input[type="submit"] {
+#filterForm select,
+#filterForm input[type="date"],
+#filterForm input[type="text"] {
+    flex-basis: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
     background-color: #3c3c3c;
     color: #d3d3d3;
-    border: none;
+}
+
+#filterForm input[type="submit"] {
     padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
     cursor: pointer;
-    border-radius: 10px;
-    font-family: 'IM Fell DW Pica', serif;
 }
 
-#filterForm select:hover, #filterForm input[type="submit"]:hover {
-    background-color: #d3d3d3;
-    color: #1a1a1a;
+#filterForm input[type="submit"]:hover {
+    background-color: #0056b3;
 }
 
-#loader {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom:1rem;
+#showCards {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
 
+#showCards:hover {
+    background-color: #1e7e34;
 }
 
 #character-cards {
@@ -109,11 +102,7 @@ button:hover {
 
 .card h2, .card p {
     text-align: center;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
+    color: #d3d3d3;
 }
 
 /*****************media query***************/
